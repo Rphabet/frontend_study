@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Digital Clock</title>
+      <!--  Bootstrap CDN(Content Delivery Network)    -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+      <!--  모든 js 라이브러리를 다 로딩한 다음에, 용자가 만든 js를 맨 마지막에 씀. 이유는 외부 js링크와 문제가 생길수 있음     -->
+      <script src="js/0713_myClock.js"></script>
+  </head>
+  <body>
+    <h1>Let's make a digital clcok!</h1>
+  <!-- HTML이 영역을 잡아주면, js가 시계를 생성해서 시간을 꽝! 찍어줄거다.  -->
+  <!-- 시간을 표현할 영역을 만들어줘야함. -->
+  <!-- 어떻게 영역을 만들까? div 나 span 블락레벨 인라인 레벨 에 맞춰서 한다. 우린 블락래벨인 div로 ㄱ ㄱ -->
+    <div id="clockDiv">Time appears here. Please press button!</div>
+    <button type="button"
+            class="btn btn-outline-primary" onclick="startClock()"> Button </button>
+<!--  onclick 뜻은 클릭했을 때 임!!  js file에서 함수 하나 만들어서 넣어줄거다.  -->
+
+  </body>
+</html>

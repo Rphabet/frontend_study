@@ -1,0 +1,28 @@
+
+/* 대표적으로 CSS에서 가장 많이 사용하는 방법을 쓸거임. 그게 뭐냐면 class 지정하는것! */
+/* CSS = Cascading Style Sheets*/
+/* 파이썬 객체지향 class랑 완전 다른거임 */
+/* .myStyle은 class selector 임 */
+.myStyle {
+
+    color : red;                              /* 전경색은 빨간색 */
+    background-color : yellow;                /* 배경색은 노란ㅅㅐㄱ */
+    font-size : 15px;
+
+}   /* 이 스타일은 이래요~ */
+
+
+/* .myStyle은 셀렉터 중 하나로 만들어진거임. */
+
+/* h1은 태그 selector임 */
+.h1 {
+    color : yellowgreen;
+}
+
+
+/* id selector (가장 많이 사용되는 것중 하나.) id selector begins with "#" */
+
+#myId{
+    color : violet;
+}
+

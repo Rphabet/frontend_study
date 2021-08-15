@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Method</title>
+        <!--  jQuery CDN  -- 밑 스크립트 이넘은 jQuery CDN임 라이브러리 를 잡을 때, jQuery를 최상단에 둘것. 왜냐면 많은 라이브러리가 jQuery 기반인 것이 많음  -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <!--  BootStrap CDN  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--  사용자 정의 JavaScript  -->
+        <script src="js/0715_jQuery_method.js"></script>
+        <style>
+            .liStyle {
+                color : red;
+                background-color : yellow;
+                font-size : 20pt;
+            };
+
+            .divStyle{
+                width : 300px;   /* 단위도 입력해야함. 인치 픽셀 등등 많은 단위가 있으니 헷갈리지 않게 늘 명시하자 */
+                height : 200px;
+                background-color : yellow;
+            };
+        </style>
+    </head>
+    <body class="container">
+        <div class="divStyle">
+            <h1>여기는 h1 입니다.</h1>
+        </div>
+        <ul>
+            <li>Seoul</li>
+            <li>Incheon</li>
+            <li>Pusan</li>
+            <li>Daegu</li>
+        </ul>
+        <input class="form-control" type="text">
+        <!--속성은 "속성=속성" 이렇게 씀. HTML 표준임-->
+        <button type="button"
+                class="btn btn-primary"
+                onclick="myFunc()">Click Click!</button>
+        <button type="button"
+                class="btn btn-primary"
+                onclick="myFunc1()">Click to activate textbox</button>
+        <button type="button"
+                class="btn btn-primary"
+                onclick="myFunc2()">Click to kill textbox</button>
+    </body>
+</html>
